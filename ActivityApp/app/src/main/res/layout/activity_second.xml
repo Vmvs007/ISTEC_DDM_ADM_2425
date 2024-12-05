@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/text_second_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Segunda Activity"
+        android:textSize="40sp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/button_voltar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VOLTAR"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
