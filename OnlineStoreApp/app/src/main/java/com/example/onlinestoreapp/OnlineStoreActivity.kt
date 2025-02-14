@@ -1,5 +1,6 @@
 package com.example.onlinestoreapp
 
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
@@ -42,6 +43,10 @@ class OnlineStoreActivity : AppCompatActivity() {
 
         // ADICIONAR AO CARRINHO
         binding.listProdutos.setOnItemClickListener { parent, view, position, id ->
+
+            val mediaPlayer = MediaPlayer.create(applicationContext,R.raw.mariocoin)
+            mediaPlayer.start()
+
             listaCarrinho.add(listaProdutos.get(position))
 
             arrayAdapterCarrinho =
@@ -59,6 +64,9 @@ class OnlineStoreActivity : AppCompatActivity() {
 
         // REMOVER DO CARRINHO
         binding.listCarrinho.setOnItemClickListener { parent, view, position, id ->
+
+            val mediaPlayer = MediaPlayer.create(applicationContext,R.raw.metalpipe)
+            mediaPlayer.start()
 
             // Atualizar preço e peso
             pesoTotal -= (listaCarrinho.get(position).pesoKg* 100).roundToInt().toDouble() / 100;
