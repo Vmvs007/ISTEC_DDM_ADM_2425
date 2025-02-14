@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EMENTA"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:paddingBottom="10dp"
+        android:background="@color/light_brown"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:id="@+id/layout_massa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/image_massa"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            app:srcCompat="@drawable/massa" />
+
+        <TextView
+            android:id="@+id/text_massa"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="Massa"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/text_preco_massa"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="4.50€"
+            android:layout_marginEnd="20dp"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/edit_qnt_massa"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:inputType="number"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_lasanha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/image_lasanha"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            app:srcCompat="@drawable/lasanha" />
+
+        <TextView
+            android:id="@+id/text_lasanha"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="Lasanha"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/text_preco_lasanha"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2.90€"
+            android:layout_marginEnd="20dp"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/edit_qnt_lasanha"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:inputType="number"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_pizza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/image_pizza"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            app:srcCompat="@drawable/pizza" />
+
+        <TextView
+            android:id="@+id/text_pizza"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="Pizza"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/text_preco_pizza"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="9.00€"
+            android:layout_marginEnd="20dp"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/edit_qnt_pizza"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:inputType="number"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_francesinha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/image_francesinha"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            app:srcCompat="@drawable/francesinha" />
+
+        <TextView
+            android:id="@+id/text_francesinha"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="Francesinha"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/text_preco_francesinha"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="9.50€"
+            android:layout_marginEnd="20dp"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/edit_qnt_francesinha"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:inputType="number"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_litrosa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/image_litrosa"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="20dp"
+            app:srcCompat="@drawable/superbock" />
+
+        <TextView
+            android:id="@+id/text_litrosa"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="Litrosa SB"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/text_preco_litrosa"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0.50€"
+            android:layout_marginEnd="20dp"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/edit_qnt_litrosa"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:inputType="number"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_efetuar_pedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:backgroundTint="@color/light_brown"
+        android:text="PEDIR"/>
+
+
+</LinearLayout>

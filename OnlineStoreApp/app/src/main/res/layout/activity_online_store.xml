@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OnlineStoreActivity">
+
+
+    <TextView
+        android:id="@+id/text_titulo_loja"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MAGALHÃES STORE"
+        android:textSize="35sp"
+        android:background="@color/azul_magalhaes_escuro"
+        android:textColor="@color/azul_magalhaes"
+        android:paddingTop="30dp"
+        android:paddingBottom="10dp"
+        android:fontFamily="casual"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/layout_infos"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@color/azul_magalhaes"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/text_peso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/azul_magalhaes_escuro"
+            android:fontFamily="casual"
+            android:textSize="20dp"
+            android:text="0.00 Kg. "/>
+
+        <TextView
+            android:id="@+id/text_preco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/azul_magalhaes_escuro"
+            android:fontFamily="casual"
+            android:textSize="20dp"
+            android:text="| 0.00 €"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/text_produtos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/azul_magalhaes_escuro"
+        android:textSize="20dp"
+        android:background="@color/azul_magalhaes_claro"
+        android:gravity="center"
+        android:fontFamily="casual"
+        android:paddingTop="15dp"
+        android:text="PRODUTOS DISPONIVEIS"/>
+
+    <ListView
+        android:id="@+id/list_produtos"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"/>
+
+    <TextView
+        android:id="@+id/text_carrinho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/azul_magalhaes_escuro"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:fontFamily="casual"
+        android:background="@color/azul_magalhaes_claro"
+        android:paddingTop="15dp"
+        android:text="CARRINHO"/>
+
+    <ListView
+        android:id="@+id/list_carrinho"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

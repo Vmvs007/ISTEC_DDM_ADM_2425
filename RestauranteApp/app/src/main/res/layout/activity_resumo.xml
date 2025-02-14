@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/light_brown"
+    tools:context=".ResumoActivity">
+
+    <TextView
+        android:id="@+id/text_resumo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resumo do Pedido"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:textSize="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="70dp">
+
+        <TextView
+            android:id="@+id/text_titulo_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:text="Total:  "/>
+
+        <TextView
+            android:id="@+id/text_valor_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:text="0.00€"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
